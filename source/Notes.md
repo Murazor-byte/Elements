@@ -8,9 +8,17 @@ https://apcentral.collegeboard.org/media/pdf/chemistry-equations-sheet-2020.pdf
 **Ion**: is an electrically charged particle produced by either removing electrons from a neutral atom to give a positive ion or adding electrons to a neutral atom to give a negative ion
 
 
+**Charge**: is the number of protons minus the number of electrons
+
+All (if not most) elements have the same charge except for transition metals. To identify the charge of a transition metal, look at its accompanying elemnt in its compound to neutral the total charge (FeCl3 mean Fe has a positive 3 charge)
+
+
 **Reactants**: a substance that takes part in and undergoes change during a reaction
 **Products**: species formed from chemical reactions
 
+
+**Ionic Compounds**
+Are very common compounds such as (NO3) which have inidivualized names
 
 
 **Molecular Fomula**: representation of a molecule that uses chemical symbols to indicate the types of atoms followed by subscripts to show the number of atoms of each type in the molecule.
@@ -36,7 +44,9 @@ https://apcentral.collegeboard.org/media/pdf/chemistry-equations-sheet-2020.pdf
 
 **Single Displacement**: One element that starts out by itself replace another element in a compound, 'kicking' it out (A + BC = > B + AC)
 
-**Doubel Displacement**: The positive and negative ions in two compounds switch (AB + CD => AD + BC) 
+    - Look at the "activity series" to see if the replacement will work in the first place. If the element is strong enough to kick it out
+
+**Double Displacement**: The positive and negative ions in two compounds switch (AB + CD => AD + BC) 
 
 
 
