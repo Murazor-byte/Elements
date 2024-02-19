@@ -18,29 +18,10 @@ class Reaction:
       self.periodic_table = PeriodicTable()
 
 
-    def add_element(self, element_name):
-        index = next(i for i, element in enumerate(self.periodic_table.elements) if element.name == element_name)
-        return self.periodic_table.elements[index]
-
-
-    def add_compound(self, compound: List[str]):
-        reactant:List[Element] = []
-        for element in compound:
-            reactant.append(self.add_element(element))
-        return reactant
-
-
     def print_all_elements(self):
         for element in self.periodic_table.elements:
             print(f'{element.name} [{element.symbol} {element.charge}]: {element.mass}'.replace('\'', '').replace("(", "").replace(")", "").replace(",", ""))
      # print([element.name for element in self.periodic_table.elements])
-        
-
-    def print_all_elements(self, reactants: List[List[Element]]):
-        for compound in reactants:
-            for element in compound:
-                print(f'{element.name} [{element.symbol} {element.charge}]: {element.mass}'.replace('\'', '').replace("(", "").replace(")", "").replace(",", ""))
-                # print([element.name for element in self.periodic_table.elements])
 
 
     def get_charges(self, reactants: List[List[Element]]):
@@ -61,8 +42,41 @@ class Reaction:
         return num_anions, num_cations
 
 
-    def single_repalcement(self, reactants: List[List[Element]]):
+    def add_element(self, element_name):
+        index = next(i for i, element in enumerate(self.periodic_table.elements) if element.name == element_name)
+        return self.periodic_table.elements[index]
 
+
+    def add_compound(self, compound: List[str]):
+        reactant:List[Element] = []
+        for element in compound:
+            reactant.append(self.add_element(element))
+        return reactant
+
+
+    def synthesis(self, reactants: List[List[Element]]):
+        # synthesis between two elements
+        reactants[0].append(reactants[0][1])
+        del reactants[0][1]
+
+    
+    def decomposition(self, reactants: List[List[Element]]):
+        # decomposition between two elements
+        reactants.append(self.add_compound([reactants[0][1].name]))
+        del reactants[0][1]
+
+
+    def combustion(self, reactants: List[List[Element]]):
+        # Unlimited supply of Oxygen (produces Carbon di-Oxide and Water)
+        num_reactants = len(reactants)
+        for i in range(num_reactants):
+            reactants.pop(0)
+
+        reactants.append(self.add_compound(["Carbon", "Oxygen"]))
+        reactants.append(self.add_compound(["Hydrogen", "Oxygen"]))
+
+
+    def single_repalcement(self, reactants: List[List[Element]]):
         num_anions, num_cations = self.get_charges(reactants)
 
         single_reactant = compound_reactant = Element("", "", 0, 0, ElementGroup.UNKOWN_PROPERTY, ElementState.UNKOWN, 0)

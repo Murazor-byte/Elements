@@ -37,10 +37,15 @@ Are very common compounds such as (NO3) which have inidivualized names
 
 **Chemical Reaction**:
 **Synthesis**: Copmpound made from similar materials (A + B => AB)
+    - of two elements
+    - of an element and a compound
+    - of two compounds
 
 **Decomposition**: A compound is broken into simplier compounds, or all the way down to the elements that make it up (AB => A + B)
 
 **Combusiton**: A compound containing Carbon and Hydrogen (sometimes Oxygen) and combines with oxygen gas to produce carbon dioxide and water (C~x~H~y~(O~2~) + O~2~ => CO~2~ + H~2~O)
+    - unlimited oxygen gives a complete combustion of carbon di-Oxide and water
+    - a limited supply of oxygen can give other products like additional carbon di-Oxide
 
 **Single Displacement**: One element that starts out by itself replace another element in a compound, 'kicking' it out (A + BC = > B + AC)
 

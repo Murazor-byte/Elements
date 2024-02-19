@@ -8,8 +8,8 @@ if __name__ == '__main__':
     reactants: List[List[Element]] = [[]]
     reactants.pop(0) #remove empty element
 
-    reactants.append(reaction.add_compound(["Hydrogen", "Chlorine"]))
-    reactants.append(reaction.add_compound(["Sodium", "Carbon"]))
+    reactants.append(reaction.add_compound(["Carbon", "Hydrogen", "Oxygen"]))
+    reactants.append(reaction.add_compound(["Oxygen", "Hydrogen"]))
 
 
     for compound in reactants:
@@ -18,7 +18,7 @@ if __name__ == '__main__':
         print("\n")
 
     # single replacement
-    reaction.double_replacement(reactants)
+    reaction.combustion(reactants)
 
 
     print("\n")
