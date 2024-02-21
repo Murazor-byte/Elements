@@ -1,2 +1,2 @@
 # Elements
-Learning some elements
+Re-learning some elements and their basic chemical reactions
